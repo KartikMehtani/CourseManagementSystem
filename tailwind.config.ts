@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				bmu: {
+					dark: '#1A1F2C',
+					orange: '#FF7800',
+					blue: '#33C3F0',
+					green: '#4CAF50',
+					red: '#e74c3c',
+					purple: '#9b59b6',
+					darkblue: '#2c3e50'
 				}
 			},
 			borderRadius: {

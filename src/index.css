@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +91,58 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: url('/lovable-uploads/3efc25bd-9d2d-49b4-a58a-c968b2fcd2d2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
+}
+
+.nav-item {
+  @apply flex items-center gap-2 py-3 px-4 rounded-md hover:bg-slate-200/20 transition-colors;
+}
+
+.nav-item.active {
+  @apply bg-teal-100 text-teal-800;
+}
+
+.bmu-table {
+  @apply w-full text-left;
+}
+
+.bmu-table thead tr th {
+  @apply py-3 text-gray-400 font-medium border-b border-slate-700/50;
+}
+
+.bmu-table tbody tr td {
+  @apply py-4 border-b border-slate-700/50;
+}
+
+.bmu-stat-card {
+  @apply bg-slate-800/50 p-4 rounded-lg flex flex-col h-full;
+}
+
+.calendar-day {
+  @apply border border-slate-700/50 p-2 h-24 relative;
+}
+
+.calendar-day-number {
+  @apply text-lg font-medium;
+}
+
+.deadline-badge {
+  @apply px-2 py-1 text-xs rounded-full text-white inline-block my-1;
+}
+
+.deadline-badge.red {
+  @apply bg-red-500;
+}
+
+.deadline-badge.green {
+  @apply bg-green-500;
+}
+
+.deadline-badge.blue {
+  @apply bg-blue-500;
 }

@@ -15,7 +15,15 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div 
+      className="min-h-screen flex items-center justify-center p-4"
+      style={{
+        backgroundImage: 'url("/lovable-uploads/4de58515-ffca-4ec6-b613-1cb76a4783ca.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="absolute top-8 left-8">
         <img 
           src="/lovable-uploads/616b0cfc-6d74-42ac-a41f-25bc51438500.png" 
